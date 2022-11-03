@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//증가면산자 최우선순위 () ++ --
+	let num = 5;
+	
+	num++; // 6
+	document.write("num = " + num + "<br>"); 
+	
+	++num; // 7
+	document.write("num = " + num + "<br>");
+	
+	let num2 = num++; //++이 뒤에 붙어있다. var num2 = num; -> num++; 순서로 계산한다.
+	document.write("num = " + num + "&emsp; num2 = " + num2 + "<br>");  // 8 7
+	
+	let num3 = --num; //--이 앞에 붙어있다.--num; -> let num3 = num;
+	document.write("num = " + num + "&emsp; num3 = " + num3 + "<br>");  // 7 7
+	
+
+
+</script>
+	
+	
+
+</body>
+</html>

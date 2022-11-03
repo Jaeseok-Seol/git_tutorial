@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+//var는 전역변수
+var a = 100
+a = 250
+console.log(a) // 250 
+{
+	var a = 200 // ar는 전역변수. 자기 아래로 쫙 변수를 준다. 다른 var가 나오면 그 var의 변수로 바뀐다 
+	console.log(a) // 200 
+	{
+		var a = 300 // ar는 전역변수. 자기 아래로 쫙 변수를 준다. 다른 var가 나오면 그 var의 변수로 바뀐다 
+		console.log(a) //300
+		{
+			var a = 400 // var는 전역변수. 자기 아래로 쫙 변수를 준다. 다른 var가 나오면 그 var의 변수로 바뀐다 
+			console.log(a) //400
+		}
+		console.log(a) //400
+	}
+	console.log(a) // 400
+}
+console.log(a)  // 400
+</script>
+
+
+</body>
+</html>

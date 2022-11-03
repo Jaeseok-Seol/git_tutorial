@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	let sum = 0;
+	for(var i=1; i<=10; i++){ //let으로 선언하면 i는 지역변수로 작동한다. let를 var로 고치면 오류가 안뜬다.
+		document.write("i = " + i + "<br/>");	
+		sum += i;
+	}
+	
+	//document.write("i = " + i + "<br/>"); //i는 지역변수, 작동안한다. -> 화면에는 안보인다. F12 개발자 도구 Console창에서 오류(i is not defined)가 뜬다.
+											//let를 var로 고치면 오류가 안뜬다.
+
+	document.write("<h1>1부터 10까지의 합은 " + sum + "입니다.</h1>" );
+</script>
+</body>
+</html>

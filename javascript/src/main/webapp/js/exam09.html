@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function sayHello() {
+	document.write("<h1>안녕하세요.</h1>");
+	document.write("<h1>자바스크립트.</h1>");
+}
+
+sayHello(); //호출. 위로가서 function을 지나 수행하고 내려온다. 함수를 쓰면 중복을 안해도 되므로 좋다. 다만 수행시간은 조금 걸린다.
+sayHello() //내려와서 또 위로가서 수행하고 내려온다.
+
+</script>
+</body>
+</html>
+
+<!-- 
+함수
+- 어떤 기능을 구현(정의)해놓은 명령어들의 집합
+- 함수의 사용방법은 "정의"와 "호출"의 두 부분으로 나뉜다.
+
+(1) 정의
+function 함수이름() {
+   명령문;
+}
+
+(2) 호출
+함수이름();
+ -->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+//const는 재할당은 안되지만 let처럼 구역단위이다.
+const a = 100 //const는 절대값, 재할당이 불가능하다. 중간에 오류가뜨면 아예 못본다.
+// a = 250 - const는 재할당이 안된다. 그러므로 오류가 뜬다.
+console.log(a) // 100
+{
+	const a = 200  //const는 절대값, 재할당이 불가능하다. 절대값을 변경하는것은 가능하다.
+	console.log(a) // 200 
+	{
+		const a = 300  //const는 절대값, 재할당이 불가능하다. 절대값을 변경하는것은 가능하다.
+		console.log(a) //300
+		{
+			const a = 400  //const는 절대값, 재할당이 불가능하다. 절대값을 변경하는것은 가능하다.
+			console.log(a) //400
+		}
+		console.log(a) //300
+	}
+	console.log(a) // 200
+}
+console.log(a)  // 100
+</script>
+
+</body>
+</html>

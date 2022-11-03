@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+function f(x,y) {
+	var  z = x + y;
+	
+	if (z < 10) {
+		return; //함수를 벗어나라, 여기서 나갈 때는 전달값이 없다. 그래서 let a는 값이 없다.
+	}
+	
+	return z; // z가 10보다 큰 경우는 나갈 때 z라는 전달값이 있다.
+}
+
+let a = f(2, 1);
+let b = f(5, 7);
+let c = f(10, 5);
+
+document.write("<h3>" + a + "</h3>"); //undefined 값 자체가 없다.
+document.write("<h3>" + b + "</h3>"); //12
+document.write("<h3>" + c + "</h3>"); //15
+
+</script>
+
+</body>
+</html>
